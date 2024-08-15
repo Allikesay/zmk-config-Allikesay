@@ -28,12 +28,12 @@
                 lower_layer {
 // | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7   |  8  |  9  |  0  |
 // | TAB | f1  | f2  | f3  | f4  | f5  | f6  | f7   | f8  | f9  |  ;  |
-// | SHFT|mute |vdown| vup |     | brdn| brup| f10  | f11 | f12 | UARW | /   |
+// | SHFT|mute |vdown| vup | del | brdn| brup| f10  | f11 | f12 | UARW | /   |
 // | CTRL| GUI |     |     | ALT |    SPC    |  [   |  ]  | LARW| DARW | RARW|
                         bindings = <
    &kp ESC   &kp N1     &kp N2             &kp N3             &kp N4       &kp N5       &kp N6     &kp N7    &kp N8      &kp N9     &kp N0    
    &kp TAB   &kp F1     &kp F2             &kp F3             &kp F4       &kp F5       &kp F6     &kp F7    &kp F8      &kp F9     &kp SEMI 
-   &kp LSHFT &kp C_MUTE &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp C_BRI_DN &kp C_BRI_UP &trans     &kp F10   &kp F11     &kp F12    &kp UARW   &kp FSLH
+   &kp LSHFT &kp C_MUTE &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp Dell     &kp C_BRI_DN &kp C_BRI_UP     &kp F10   &kp F11     &kp F12    &kp UARW   &kp FSLH
    &kp LCTRL &kp LGUI   &trans             &trans             &kp LALT     &kp SPACE               &kp LBRC  &kp RBRC    &kp LARW   &kp DARW   &kp RARW
                         >;
                 };
@@ -42,12 +42,12 @@
 // -----------------------------------------------------------------------------------------
 // | ESC  |  !  |  @  |  #  |  $  |  %  |  ^  |  &  |  *  |  (  |  )  |
 // | TAB  |     |     |     |     |  `  |  -  |  =  |  [  |  ]  |  \  |
-// | SHFT |     |     |     |     |  ~  |  _  |  +  |  {  |  }  | "|" |  ?   |
+// | SHFT | btcr| bt1 | bt2 | bt3 |  ~  |  _  |  +  |  {  |  }  | "|" |  ?   |
 // | CTRL | GUI |     |     | ALT |    SPC    |     |     |     |     |      |
                         bindings = <
    &kp ESC   &kp EXCL &kp AT &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR
    &kp TAB   &trans   &trans &trans   &trans    &kp GRAVE   &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH 
-   &kp LSHFT &trans   &trans &trans   &trans    &kp TILDE   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp QMARK
+   &kp LSHFT &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2    &kp TILDE   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp QMARK
    &kp LCTRL &kp LGUI &trans &trans   &kp LALT  &kp SPACE             &trans    &trans    &trans   &trans   &trans
                         >;
                 };
