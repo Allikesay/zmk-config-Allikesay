@@ -19,7 +19,5 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: Allikesay
-  - board: nice_nano_v2
-    shield: settings_reset
+    shield: allikesay
 
