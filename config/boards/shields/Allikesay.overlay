@@ -1,4 +1,4 @@
-#include "allikesay.dtsi"
+#include "Allikesay.dtsi"
 
 &kscan0 {
     col-gpios
