@@ -1,2 +1,2 @@
 config SHIELD_ALLIKESAY
-    def_bool $(shield_list_contains,allikesay)
+    def_bool $(shields_list_contains,allikesay)
