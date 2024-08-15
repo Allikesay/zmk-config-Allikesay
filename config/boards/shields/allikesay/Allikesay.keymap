@@ -45,10 +45,10 @@
 // | SHFT | btcr| bt1 | bt2 | bt3 |  ~  |  _  |  +  |  {  |  }  | "|" |  ?   |
 // | CTRL | GUI |     |     | ALT |    SPC    |     |     |     |     |      |
                         bindings = <
-   &kp ESC   &kp EXCL &kp AT &kp HASH &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR
-   &kp TAB   &trans   &trans &trans   &trans    &kp GRAVE   &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH 
-   &kp LSHFT &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2    &kp TILDE   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp QMARK
-   &kp LCTRL &kp LGUI &trans &trans   &kp LALT  &kp SPACE             &trans    &trans    &trans   &trans   &trans
+   &kp ESC   &kp EXCL     &kp AT &kp HASH &kp DLLR       &kp PRCNT       &kp CARET   &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR
+   &kp TAB   &trans       &trans &trans   &trans         &kp GRAVE       &kp MINUS   &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH 
+   &kp LSHFT &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &kp TILDE   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp QMARK
+   &kp LCTRL &kp LGUI     &trans          &trans         &kp LALT        &kp SPACE             &trans    &trans    &trans   &trans   &trans
                         >;
                 };
         };
