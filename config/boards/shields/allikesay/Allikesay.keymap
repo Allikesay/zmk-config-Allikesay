@@ -17,38 +17,45 @@
 // | ESC |  Q  |  W  |  E  |  R  |  T  |  Y  |  U   |  I  |  O   |  P   |
 // | TAB |  A  |  S  |  D  |  F  |  G  |  H  |  J   |  K  |  L   | ENT  |
 // | SHFT|  Z  |  X  |  C  |  V  |  B  |  N  |  M   |  ,  |  .   | UARW | BKSP |
-// | CTRL| GUI | num | ins | ALT |     SPC   |  {   |  }  | LARW | DARW | RARW |
+// | CTRL| GUI | ins | num | ALT |     SPC   |  [   |  ]  | LARW | DARW | RARW |
+// -----------------------------------------------------------------------------------------
+
                         bindings = <
-   &kp ESC   &kp Q     &kp W   &kp E  &kp R    &kp T       &kp Y     &kp U    &kp I      &kp O     &kp P    
-   &kp TAB   &kp A     &kp S   &kp D  &kp F    &kp G       &kp H     &kp J    &kp K      &kp L     &kp RET 
-   &kp LSHFT &kp Z     &kp X   &kp C  &kp V    &kp B       &kp N     &kp M    &kp COMMA  &kp DOT   &kp UARW &kp BSPC
-   &kp LCTRL &kp LGUI  &mo 1   &mo 2  &kp LALT &kp SPACE             &kp LBRC  &kp RBRC  &kp LARW  &kp DARW &kp RARW
+   &kp ESC    &kp Q     &kp W   &kp E  &kp R    &kp T       &kp Y     &kp U    &kp I      &kp O     &kp P    
+   &kp TAB    &kp A     &kp S   &kp D  &kp F    &kp G       &kp H     &kp J    &kp K      &kp L     &kp RET 
+   &kp LSHFT  &kp Z     &kp X   &kp C  &kp V    &kp B       &kp N     &kp M    &kp COMMA  &kp DOT   &kp UARW  &kp BSPC
+   &kp LCTRL  &kp LGUI  &mo 2   &mo 1  &kp LALT &kp SPACE             &kp LBKT  &kp RBKT  &kp LARW  &kp DARW  &kp RARW
                         >;
                 };
                 lower_layer {
-// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7   |  8  |  9  |  0  |
-// | TAB | f1  | f2  | f3  | f4  | f5  | f6  | f7   | f8  | f9  |  ;  |
-// | SHFT|mute |vdown| vup | del | brdn| brup| f10  | f11 | f12 | UARW | /   |
-// | CTRL| GUI |     |     | ALT |    SPC    |  [   |  ]  | LARW| DARW | RARW|
+// -----------------------------------------------------------------------------------------                
+// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |
+// | TAB |     |     |     |     |     |     |     |     |  '  |  ;  |
+// | SHFT|mute |vdown| vup |     | brdn| brup|     |     |  \  | UARW | /   |
+// | CTRL| GUI |     |     | ALT |    SPC    |  (  |  )  | LARW| DARW | RARW|
+// -----------------------------------------------------------------------------------------
+
                         bindings = <
-   &kp ESC   &kp N1     &kp N2             &kp N3             &kp N4       &kp N5       &kp N6     &kp N7    &kp N8      &kp N9     &kp N0    
-   &kp TAB   &kp F1     &kp F2             &kp F3             &kp F4       &kp F5       &kp F6     &kp F7    &kp F8      &kp F9     &kp SEMI 
-   &kp LSHFT &kp C_MUTE &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp DEL     &kp C_BRI_DN &kp C_BRI_UP     &kp F10   &kp F11     &kp F12    &kp UARW   &kp FSLH
-   &kp LCTRL &kp LGUI   &trans             &trans             &kp LALT     &kp SPACE               &kp LBRC  &kp RBRC    &kp LARW   &kp DARW   &kp RARW
+   &kp ESC   &kp N1     &kp N2             &kp N3             &kp N4       &kp N5        &kp N6          &kp N7    &kp N8      &kp N9     &kp N0    
+   &kp TAB   &trans     &trans             &trans             &trans       &trans        &trans          &trans    &trans      &kp APOS   &kp SEMICOLON
+   &kp LSHFT &kp C_MUTE &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &trans       &kp C_BRI_DN  &kp C_BRI_UP    &trans    &trans      &kp BSLH   &kp UARW      &kp FSLH
+   &kp LCTRL &kp LGUI   &trans             &trans             &kp LALT     &kp SPACE                     &kp LPAR  &kp RPAR    &kp LARW   &kp DARW      &kp RARW
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | ESC  |  !  |  @  |  #  |  $  |  %  |  ^  |  &  |  *  |  (  |  )  |
-// | TAB  |     |     |     |     |  `  |  -  |  =  |  [  |  ]  |  \  |
-// | SHFT | btcr| bt1 | bt2 | bt3 |  ~  |  _  |  +  |  {  |  }  | "|" |  ?   |
-// | CTRL | GUI |     |     | ALT |    SPC    |     |     |     |     |      |
+// | ESC  | f1  | f2  | f3  | f4  | f5  | f6  | f7  | f8  | f9  | f10 |
+// | TAB  | btcr|     |     |  `  |  -  |  =  |     | f11 | f12 | ENT |
+// | SHFT |     | bt1 | bt2 | bt3 |     |     |     |     | DEL | UARW| BKSP|
+// | CTRL | GUI |     |     | ALT |    SPC    | LALT|RCTRL| LARW| DARW| RARW|
+// -----------------------------------------------------------------------------------------
+
                         bindings = <
-   &kp ESC   &kp EXCL     &kp AT &kp HASH &kp DLLR       &kp PRCNT       &kp CARET   &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR
-   &kp TAB   &bt BT_CLR   &trans   &trans         &kp GRAVE       &kp MINUS   &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH 
-   &kp LSHFT &trans      &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &kp TILDE   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp QMARK
-   &kp LCTRL &kp LGUI     &trans          &trans         &kp LALT        &kp SPACE             &trans    &trans    &trans   &trans   &trans
+   &kp ESC   &kp F1       &kp F2         &kp F3          &kp F4         &kp F5      &kp F6     &kp F7     &kp F8     &kp F9    &kp F10
+   &kp TAB   &bt BT_CLR   &trans         &trans          &kp GRAVE      &kp MINUS   &kp EQUAL  &trans     &kp F11    &kp F12   &kp RET
+   &kp LSHFT &trans       &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2   &trans      &trans     &trans     &trans     &kp DEL   &kp UARW    &kp BSPC
+   &kp LCTRL &kp LGUI     &trans         &trans          &kp LALT       &kp SPACE              &kp RALT   &kp RCTRL  &kp LARW  &kp DARW    &kp RARW
                         >;
                 };
         };
